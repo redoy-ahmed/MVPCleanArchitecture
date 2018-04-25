@@ -27,10 +27,9 @@ ext {
     minSdkVersion = 16
     targetSdkVersion = 27
     compileSdkVersion = 27
-    buildToolsVersion = '27.0.3'
 
     // App dependencies
-    supportLibraryVersion = '27.1.1'
+    supportLibraryVersion = '27.1.0'
     gsonVersion = '2.8.0'
     calligraphyVersion = '2.2.0'
     glideVersion = '3.7.0'

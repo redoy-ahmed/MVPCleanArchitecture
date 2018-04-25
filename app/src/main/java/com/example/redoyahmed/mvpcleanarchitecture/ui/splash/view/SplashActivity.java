@@ -2,13 +2,12 @@ package com.example.redoyahmed.mvpcleanarchitecture.ui.splash.view;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.redoyahmed.mvpcleanarchitecture.R;
-import com.example.redoyahmed.mvpcleanarchitecture.service.SyncService;
 import com.example.redoyahmed.mvpcleanarchitecture.ui.base.BaseActivity;
 import com.example.redoyahmed.mvpcleanarchitecture.ui.login.view.LoginActivity;
+import com.example.redoyahmed.mvpcleanarchitecture.ui.main.view.MainActivity;
 import com.example.redoyahmed.mvpcleanarchitecture.ui.splash.interactor.SplashMvpInteractor;
 import com.example.redoyahmed.mvpcleanarchitecture.ui.splash.presenter.SplashMvpPresenter;
 
@@ -44,9 +43,9 @@ public class SplashActivity extends BaseActivity implements SplashMvpView {
 
     @Override
     public void openMainActivity() {
-        //Intent intent = MainActivity.getStartIntent(SplashActivity.this);
-        //startActivity(intent);
-        //finish();
+        Intent intent = MainActivity.getStartIntent(SplashActivity.this);
+        startActivity(intent);
+        finish();
     }
 
     @Override

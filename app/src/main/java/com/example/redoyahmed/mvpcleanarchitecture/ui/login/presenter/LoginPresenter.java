@@ -17,7 +17,6 @@ import javax.inject.Inject;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.functions.Consumer;
 
-
 public class LoginPresenter<V extends LoginMvpView, I extends LoginMvpInteractor> extends BasePresenter<V, I> implements LoginMvpPresenter<V, I> {
 
     private static final String TAG = "LoginPresenter";
@@ -49,7 +48,7 @@ public class LoginPresenter<V extends LoginMvpView, I extends LoginMvpInteractor
                 .observeOn(getSchedulerProvider().ui())
                 .subscribe(new Consumer<LoginResponse>() {
                     @Override
-                    public void accept(LoginResponse response) throws Exception {
+                    public void accept(LoginResponse response) {
                         getInteractor().updateUserInfo(
                                 response.getAccessToken(),
                                 response.getUserId(),

@@ -11,6 +11,7 @@ import com.example.redoyahmed.mvpcleanarchitecture.R;
 import com.example.redoyahmed.mvpcleanarchitecture.ui.base.BaseActivity;
 import com.example.redoyahmed.mvpcleanarchitecture.ui.login.interactor.LoginMvpInteractor;
 import com.example.redoyahmed.mvpcleanarchitecture.ui.login.presenter.LoginMvpPresenter;
+import com.example.redoyahmed.mvpcleanarchitecture.ui.main.view.MainActivity;
 
 import javax.inject.Inject;
 
@@ -53,9 +54,9 @@ public class LoginActivity extends BaseActivity implements LoginMvpView {
 
     @Override
     public void openMainActivity() {
-        /*Intent intent = MainActivity.getStartIntent(LoginActivity.this);
+        Intent intent = MainActivity.getStartIntent(LoginActivity.this);
         startActivity(intent);
-        finish();*/
+        finish();
     }
 
     @Override
